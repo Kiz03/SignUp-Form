@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            min-height: 100vh;
+            width: fit-content;
+           
+        }
+        * {
+             margin:0;
+            padding:0;
+            box-sizing: border-box;
+            
+        }
+        .bcro {
+         height: 100vh;
+         width: 500px;
+         position: absolute;
+         
+        }
+
+        .body {
+            display: flex;
+        }
+
+        .scnd {
+            background-color: rgb(6, 6, 7);
+            height: 100vh;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            margin-left: 500px;
+            position: absolute;
+        }
+
+        .heding {
+           display: flex;
+           flex-direction: column;
+            background-color: black;
+            
+            width: 1420px;
+            height: 500px;
+            font-size: 35px;
+            justify-content: end;
+            
+            font-weight:900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+
+        }
+        .heding > p {
+            margin-left: 10px;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .frm {
+            background-color: white;
+            width: 1420px;
+            height: 500px;
+        }
+
+        .formm {
+            display: flex;
+            
+            width: 900px;
+            height: 400px;
+            flex-direction: column;
+           
+            
+           
+            flex-wrap: wrap;
+            
+            
+            margin-top: 15px;
+            margin-left: 40px;
+
+
+        }
+
+      .formm > *  {
+          margin: 10px;
+          display: flex;
+            
+            
+
+        }
+
+        .frm > h2 {
+            margin-left: 50px;
+            margin-top: 25px;
+           
+        }
+
+        .fnln {
+            display: flex;
+            justify-content: space-between;
+            
+
+            
+           
+        }
+
+        .formm > label, input {
+            height: 25px;
+            width: 300px;
+            font-weight: 500;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-color: purple;
+            border-radius: 10px;
+
+            
+        }
+
+        :focus {
+            background-color: rgb(163, 163, 170);
+        }
+
+        
+
+       
+
+        .fnn {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+
+        }
+
+        .fnn > label {
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .lnn > label {
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        
+
+        .lnn {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            margin-right: 200px;
+        }
+
+        .emphn {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 45px;
+            
+        }
+
+        .ema {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .pn {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            margin-right: 200px;
+            
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+        margin: 0;
+        }
+       input[type="number"] {
+      -moz-appearance: textfield;
+     } 
+
+     .pssword {
+             display: flex;
+            justify-content: space-between;
+            margin-top: 45px;
+     }
+
+     .pss1 {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+     }
+
+     .pss2 {
+        display: flex;
+            flex-direction: column;
+            gap: 3px;
+            margin-right: 200px;
+            
+     }
+
+    
+
+    input:valid:hover {
+       
+        border-color: green;
+    }
+
+    button[type='submit'] {
+       
+        border-radius: 10px;
+        background-color: rgb(125, 119, 155);
+        height: 45px;
+        width: 95px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: azure;
+    }
+
+    input:invalid:hover{
+        background-color: ivory;
+        border-color: crimson;
+    }
+
+    .linkk {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .end {
+        margin-top: 45px;
+    }
+
+    .cloud {
+        height:400px;
+        width: 400px;
+        margin: 30px;
+    }
+
+    .front {
+        position: relative;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-top: 150px;
+        height: fit-content;
+        width: fit-content;
+        border-color: white;
+        border-style: solid;
+    }
+
+    .txxt {
+        
+        margin-left: 75px;
+        margin-top: 50px;
+        color: white;
+        font-family: fantasy;
+        font-size: 35px;
+        border-color: white;
+        border-style: solid;
+        padding-left: 10px;
+        width: fit-content;
+        padding-right: 10px;
+      
+        
+        
+
+    }
+
+
+    .ho {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+     
+     
+
+
+    </style>
+</head>
+<body>
+    <div class="body">
+       
+        <img class="bcro" src="galactic_lg.jpg" alt="">
+        <div class="ho">
+            <div class="front">
+                <img class='cloud' src="istockphoto-1332460610-612x612.jpg" alt="">
+                 
+             </div>
+             <div class='txxt'>Come Dream With Us</div>
+        </div>
+       
+        <div class="scnd">
+        <div class="heding">
+            <p>Do <strong>YOU</strong> want to lucid dream? Yah? If so sign up for our guide below to get started.</p>
+            <br>
+            <p>We <em>know</em> you want to.</p>
+        </div>
+        <div class="frm">
+            <h2>Let's do this!</h2>
+           
+            <form action="" method="get" class="formm">
+                <div class="fnln">
+                    <div class="fnn">
+                    <label for="fn">FIRST NAME</label>
+                    <input type="text" id="fn" required>
+                    </div>
+                    <div class="lnn">
+                         <label for="ln">LAST NAME</label>
+                        <input type="text" id="ln" required>
+                    </div>
+                </div>
+                <div class="emphn">
+                    <div class="ema">
+                        <label for="eml">EMAIL</label>
+                        <input type="email" id="eml" placeholder="johndoe@hotmail.com" required>
+                    </div>
+                    <div class="pn">
+                        <label for="phone">PHONE</label>
+                        <input type="number" id="phone" required>
+                    </div>
+
+                </div>
+
+                <div class="pssword">
+                    <div class="pss1">
+                        <label for="ps1">PASSWORD</label>
+                        <input type="password" id="ps1" name = 'ps1'  required>
+                    </div>
+                    <div class="pss2">
+                        <label for="ps2">CONFIRM PASSWORD</label>
+                        <input type="password" id="ps2" name='ps2' required>
+                    </div>
+                </div>
+
+                <div class="end">
+                    <div>
+                        <button id="sub" type="submit">Submit</button>
+                      </div>
+
+                      <div class="linkk">Already a member? Login <a href="http://127.0.0.1:5500/index.html">here</a></div>
+                    
+
+                </div>
+
+                
+
+
+
+            </form>
+           
+        </div>
+        </div>
+
+    </div>
+
+    <script>
+        const pss1 = document.getElementById('ps1');
+        const pss2 = document.getElementById('ps2');
+        const sub = document.getElementById('sub');
+       pss2.addEventListener("input", (e) => {
+        if (pss2.value != pss1.value) {
+               pss2.setCustomValidity('Passwords do not match!');
+           } else {
+                pss2.setCustomValidity('');
+
+            }
+        })
+
+       //sub.addEventListener('click', e => {
+        
+
+    //   })
+
+       
+    </script>
+    
+</body>
+</html>
